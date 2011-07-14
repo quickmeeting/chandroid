@@ -1,0 +1,4 @@
+http://developer.android.com/guide/topics/fundamentals/activities.html
+http://developer.android.com/guide/topics/fundamentals/fragments.html
+http://developer.android.com/guide/topics/fundamentals/loaders.html
+http://developer.android.com/guide/topics/fundamentals/tasks-and-back-stack.html
