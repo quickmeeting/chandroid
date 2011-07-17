@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hola Mundo!\n\nSoy el super discador de Trollencio :-)</string>
+    <string name="app_name">SimpleDialer</string>
+    <string name="call_now">Llama Ahora!</string>
+</resources>
