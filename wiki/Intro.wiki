@@ -1,13 +1,63 @@
-#summary One-sentence summary of this page.
+= LAB 001: Simple Dialer =
 
-= Introduction =
+== Creador ==
+Tomás Almeida
 
-Add your content here.
 
+== Problema ==
+Trolencio es un joven desarrollador que tiene muchas ganas de impresionar su nueva amiga Fuckencia. Para eso Trolencio tiene su poderoso móvil Android y muchas ganas de aprender. Como la función de todo móvil es llamar, Trolencio en un acto de sabiduría pensó en crear su propio dialer para su teléfono. Como Trolencio solo quiere impresionar, creará el dialer, pero dejará que otra aplicación se encargue de realizar la llamada.
 
-= Details =
+== Tiempo estimado para resolución ==
+30 minutos
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+== Pre-requisitos == 
+ * Entorno de android configurado
+
+== Pasos de la resolución ==
+
+  # Crear un nuevo proyecto Android (Compatible con versión 2.1)
+  # Dibujar un nuevo layout para su dialer (el layout debe contener un campo para entrada de números de teléfono (EditText por ejemplo) y algún component para que disparar la llamada (Button por ejemplo)
+  # Acoplar el layout a la activity
+  # Insertar código para hacer llamadas
+  # Iniciar emulador y testar tu nueva aplicación
+    # En caso de error, verificar los logs en el DDMS
+    #Si no consigues avanzar, ver las pistas abajo
+
+== Pistas para facilitar el desarrollo ==
+
+Utilice en caso de dudas :-)
+
+  # Lanzar Intent que dispara nueva llamada
+	
+  {{{
+   Intent startCaller = new Intent(Intent.ACTION_CALL, Uri.parse("tel:123456789"));
+   startActivity(startCaller);
+  }}}
+
+  # Permiso para que tu aplicación haga llamadas (Insertar en el AndroidManifest.xml)
+
+  {{{
+   <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+  }}}
+
+  # Crear listener que contesta siempre que tu component es pinchando
+
+  {{{
+   <COMPONENT>.setOnClickListener(new View.OnClickListener() {
+		public void onClick(View v) {
+			<DO SOMETHING>
+		}
+    });
+  }}}
+
+  # Cuando la "Call key" es pinchada, hace algo (CUIDADO: no son todos moviles que tienen call key)
+ 
+  {{{
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_CALL) {
+			<DO SOMETHING>
+			return true;
+		}
+		return false;
+	}
+  }}}
