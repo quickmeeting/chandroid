@@ -27,20 +27,20 @@ Trolencio es un joven desarrollador que tiene muchas ganas de impresionar su nue
 
 Utilice en caso de dudas :-)
 
-  # Lanzar Intent que dispara nueva llamada
+  * Lanzar Intent que dispara nueva llamada
 	
   {{{
    Intent startCaller = new Intent(Intent.ACTION_CALL, Uri.parse("tel:123456789"));
    startActivity(startCaller);
   }}}
 
-  # Permiso para que tu aplicación haga llamadas (Insertar en el AndroidManifest.xml)
+  * Permiso para que tu aplicación haga llamadas (Insertar en el AndroidManifest.xml)
 
   {{{
    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
   }}}
 
-  # Crear listener que contesta siempre que tu component es pinchando
+  * Crear listener que contesta siempre que tu component es pinchando
 
   {{{
    <COMPONENT>.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +50,7 @@ Utilice en caso de dudas :-)
     });
   }}}
 
-  # Cuando la "Call key" es pinchada, hace algo (CUIDADO: no son todos moviles que tienen call key)
+  * Cuando la "Call key" es pinchada, hace algo (CUIDADO: no son todos moviles que tienen call key)
  
   {{{
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
