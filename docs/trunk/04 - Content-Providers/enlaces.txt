@@ -1,0 +1,4 @@
+http://developer.android.com/guide/topics/providers/content-providers.html
+--Otros
+http://saigeethamn.blogspot.com/2011/05/contacts-api-20-and-above-android.html
+http://ormlite.com/sqlite_java_android_orm.shtml
