@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SimpleDialer!</string>
+    <string name="app_name">SimpleDialer</string>
+    <string name="title">Marca el número y llama</string>
+    <string name="call">Llama!</string>
+    <string name="badNumber">Número erróneo!</string>
+</resources>
