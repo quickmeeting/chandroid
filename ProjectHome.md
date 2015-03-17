@@ -1,0 +1,1 @@
+A set of applications and tutorials developed by Spanish (and Brazilian) people interested in Android.
